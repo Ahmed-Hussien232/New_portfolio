@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/portfolio.css' %}">
+    <title>Ahmed Hussien</title>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">AHMED</a>
+        <nav class="navigation">
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="main">
+        <div>
+            <h2>Hello, I'm Ahmed<br><span>Web Developer</span></h2>
+            <h3>Building modern, responsive <br>and user-friendly websites.</h3>
+            <a href="#projects" class="main-btn">View my work</a>
+            <div class="social-icons">
+                <a href="https://wa.me/201558894828"><i class="fa-brands fa-square-whatsapp"></i></a>
+                <a href="https://github.com/Ahmed-Hussien232"><i class="fa-brands fa-square-github"></i></a>
+                <a href="https://www.linkedin.com/in/ahmed-hussien-76a169374/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards" id="services">
+        <h2 class="title">Services</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <div class="info">
+                    <h3>Frontend Development</h3>
+                    <p>Build responsive and user-friendly websites using HTML, CSS, and JavaScript. I focus on creating clean designs and interactive interfaces that work seamlessly across all devices.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <div class="info">
+                    <h3>Backend Development</h3>
+                    <p>Develop powerful server-side applications using Django. I can build secure and scalable web apps with authentication, databases, and APIs.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <div class="info">
+                    <h3>Full Website Projects</h3>
+                    <p>Deliver complete websites from scratch — from idea and design to deployment. Whether it's a personal portfolio, business site, or small e-commerce store, I provide full-stack solutions tailored to your needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="title">Projects</h2>
+        <div class="content">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="{% static 'image/pet_shop.jpg' %}" alt="">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Full Website Project</p>
+                    <strong class="project-title">
+                        <span>Pet Shop</span>
+                        <a href="https://4pawsclinic.pythonanywhere.com/" class="more-details">more details</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="{% static 'image/printing.jpeg' %}" alt="">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Full Website Project</p>
+                    <strong class="project-title">
+                        <span>Printing Press</span>
+                        <a href="https://alemam3.pythonanywhere.com/" class="more-details">more details</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="{% static 'image/youtube_1.jpg' %}" alt="">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Frontend Development</p>
+                    <strong class="project-title">
+                        <span>You tube like platfoem</span>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="{% static 'image/twitter_1.jpg' %}" alt="">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Frontend Development</p>
+                    <strong class="project-title">
+                        <span>Twitter like platform</span>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="{% static 'image/palastine_flag.jpg' %}" alt="">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Frontend Development by JS only</p>
+                    <strong class="project-title">
+                        <span>Palastine flag</span> 
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="{% static 'image/login.jpg' %}" alt="">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Frontend Development</p>
+                    <strong class="project-title">
+                        <span>Login page</span>             
+                    </strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards contact" id="contact">
+        <h2 class="title">Let's work together</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="info">
+                    <h3>Phone</h3>
+                    <p>01558894828</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="info">
+                    <h3>Email</h3>
+                    <p>a7med.h.e.2004<br>@gmail.com</p>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <footer class="footer">
+        <p class="footer-title">Copyrights @<span>Ahmed Husssien</span></p>
+        <div class="social-icons">
+            <a href="https://wa.me/201558894828"><i class="fa-brands fa-square-whatsapp"></i></a>
+            <a href="https://github.com/Ahmed-Hussien232"><i class="fa-brands fa-square-github"></i></a>
+            <a href="https://www.linkedin.com/in/ahmed-hussien-76a169374/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
